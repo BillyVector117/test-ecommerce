@@ -6,6 +6,23 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color: #F3D0D7;
+  --secondary_color: #FFEFEF;
+  --thirth_color: #F0EBE3;
+  --fourth_color: #F6F5F2;
+  --typography--primary_color: #f74065
+}
+
+.main_typo_color {
+  color: rgb(247, 64, 101);
+}
+
+.review_label {
+  color: rgb(247, 64, 101);
+}
+
+.review_label:hover {
+  color: #F3D0D7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +35,66 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.spinner {
+  text-align: center;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .flex {
+  display: flex;
+} */
+.navbar {
+  background-color: #F3D0D7;
+}
+
+.profile-container {
+  background-color: #F0EBE3;
+  ;
+}
+
+.primary_button {
+  background-color: #F3D0D7;
+  color: rgb(247, 64, 101);
+  font-size: 500;
+  border-radius: 6px;
+
+}
+
+.search-input {
+  color: #f74065;
+}
+
+.checkout_button {
+  background-color: rgb(247, 64, 101);
+  color: #F3D0D7;
+  font-size: 500;
+  font-weight: 700;
+}
+
+.checkout_button:hover {
+  background-color: #F3D0D7;
+  color: rgb(247, 64, 101);
+  font-size: 500;
+}
+
+.primary_button:hover {
+  background-color: rgb(247, 64, 101);
+  ;
+  color: #F3D0D7;
+}
+
+.product_list_container {
+  background-color: #F0EBE3;
 }
 
 @layer utilities {
